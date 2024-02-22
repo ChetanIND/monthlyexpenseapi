@@ -100,10 +100,10 @@ async def predict(user_id: str = Path(..., title="The ID of the user to predict 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-
+'''
 if __name__ == "__main__":
     port = int(getenv("PORT", 8000))
-    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=True)
+    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=True)'''
 
 
 
